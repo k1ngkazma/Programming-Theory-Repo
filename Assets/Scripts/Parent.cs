@@ -8,10 +8,26 @@ public class Parent : MonoBehaviour
    
     //rigid body variable
     public Rigidbody rb;
-   
+
     //for upward force
-    public float rb_force=10.0f;
-    //variable for text
+    private float rbForce = 10.0f;
+    //ENCAPSULATION
+    public float rb_force
+    {
+        get { return rbForce; }
+        set
+        {
+            if (value > 15.0f || value < 3.0f)
+            {
+                Debug.LogError("the force value is out of range");
+            }
+            else
+            {
+                rbForce = value;
+            }
+        }
+
+    }
     public TMP_Text nameText;
 
 
