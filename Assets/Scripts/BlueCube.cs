@@ -10,6 +10,7 @@ public class BlueCube : Parent
         nameText.text = ("Blue Cube LowJumper");
     }
 
+    //OVERRIDE added force.  If it is more than 15 or less than 3. gives error message
     public override void JumpObjective()
     {
         

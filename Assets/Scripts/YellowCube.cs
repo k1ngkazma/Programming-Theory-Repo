@@ -10,6 +10,7 @@ public class YellowCube : Parent
         nameText.text = ("Yellow Cube HighJumper");
     }
 
+    //OVERRIDE added force.  If it is more than 15 or less than 3. gives error message
     public override void JumpObjective()
     {
         rb_force = 12.0f;
